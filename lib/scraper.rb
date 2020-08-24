@@ -22,7 +22,7 @@ class Scraper
     social_links = doc.css("div .social-icon-container a")
     info_hash = {}
     
-    binding.pry
+    # binding.pry
     if element.attr("href").include?("twitter")
           return_hash[:twitter] = element.attr('href')
         elsif element.attr("href").include?("linkedin")
