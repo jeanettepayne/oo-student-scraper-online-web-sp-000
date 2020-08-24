@@ -25,13 +25,13 @@ class Scraper
     # binding.pry
     social_links.each do |element|
       if element.attr("href").include?("twitter")
-          return_hash[:twitter] = element.attr('href')
+          info_hash[:twitter] = element.attr("href")
         elsif element.attr("href").include?("linkedin")
-          return_hash[:linkedin] = element.attr('href')
+          info_hash[:linkedin] = element.attr("href")
         elsif element.attr("href").include?("github")
-          return_hash[:github] = element.attr('href')
+          info_hash[:github] = element.attr("href")
         elsif element.attr("href").end_with?("com/")
-          return_hash[:blog] = element.attr('href')
+          info_hash[:blog] = element.attr("href")
         end
     end
   end
