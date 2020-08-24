@@ -33,10 +33,11 @@ class Scraper
         elsif element.attr("href").end_with?("com/")
           info_hash[:blog] = element.attr("href")
         end
-    end
+    
     social_links[:profile_quote] = doc.css(".vitals-text-container .profile-quote").text
     social_links[:bio] = doc.css(".description-holder").text
     social_links
+   end
   end
 
 end
