@@ -38,6 +38,9 @@ class Scraper
 
 end
 
+#profile quote
+#bio
+
 
 #all info - div class student-card
 # name - div card-text-container -> h4 class student-name
