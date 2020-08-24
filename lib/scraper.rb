@@ -12,7 +12,7 @@ class Scraper
       binding.pry
       {:name => attributes.css("h4").text,
         :location => attributes.css("p").text,
-        :profile_url => attributes.css("a").attr("href")
+        :profile_url => attributes.css("a").attr("href").value
       }
     end
   end
