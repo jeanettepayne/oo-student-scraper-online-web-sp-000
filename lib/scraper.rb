@@ -23,7 +23,8 @@ class Scraper
     info_hash = {}
     
     # binding.pry
-    if element.attr("href").include?("twitter")
+    social_links.each do |element|
+      if element.attr("href").include?("twitter")
           return_hash[:twitter] = element.attr('href')
         elsif element.attr("href").include?("linkedin")
           return_hash[:linkedin] = element.attr('href')
