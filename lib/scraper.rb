@@ -43,6 +43,7 @@ class Scraper
 
 end
 
+#div .description-holder
 #profile quote
 #bio
 
