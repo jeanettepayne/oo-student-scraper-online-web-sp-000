@@ -9,7 +9,7 @@ class Scraper
     student_info_card = doc.css("div .student-card")
     
     student_info_card.collect do |attributes|
-      binding.pry
+      # binding.pry
       {:name => attributes.css("h4").text,
         :location => attributes.css("p").text,
         :profile_url => attributes.css("a").attr("href").value
