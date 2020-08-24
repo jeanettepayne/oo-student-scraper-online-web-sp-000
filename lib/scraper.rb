@@ -20,7 +20,7 @@ class Scraper
     html = open(profile_url)
     doc = Nokogiri::HTML(html)
     binding.pry
-    # {:twitter => doc.css,
+    # {:twitter => doc.css("div .social-icon-container"),
     # :linkedin => ,
     # :github => ,
     # :blog => ,
