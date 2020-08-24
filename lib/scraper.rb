@@ -36,7 +36,7 @@ class Scraper
       end
     
     info_hash[:profile_quote] = doc.css(".vitals-text-container .profile-quote").text.gsub("\n", "").split.join(" ")
-    info_hash[:bio] = doc.css(".description-holder").text.gsub("\n", "").split.join(" ")
+    info_hash[:bio] = doc.css("..description-holder").text.gsub("\n", "").split.join(" ")
     
     info_hash
   end
