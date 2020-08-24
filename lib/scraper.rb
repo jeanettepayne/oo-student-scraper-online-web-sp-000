@@ -34,6 +34,8 @@ class Scraper
           info_hash[:blog] = element.attr("href")
         end
     end
+    social_links[:profile_quote] = 
+    social_links[:bio] = 
   end
 
 end
