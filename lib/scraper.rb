@@ -35,8 +35,8 @@ class Scraper
         end
       end
     
-    info_hash[:profile_quote] = doc.css(".vitals-text-container .profile-quote").text
-    info_hash[:bio] = doc.css(".description-holder").text
+    info_hash[:profile_quote] = doc.css(".vitals-text-container .profile-quote").text.chomp
+    info_hash[:bio] = doc.css(".description-holder").text.chomp
     
     info_hash
   end
