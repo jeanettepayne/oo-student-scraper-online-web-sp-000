@@ -22,7 +22,7 @@ class Scraper
     social_links = doc.css("div .social-icon-container a")
     info_hash = {}
     
-    # binding.pry
+    binding.pry
     social_links.each do |element|
       if element.attr("href").include?("twitter")
           info_hash[:twitter] = element.attr("href")
@@ -35,7 +35,7 @@ class Scraper
         end
     end
     social_links[:profile_quote] = 
-    social_links[:bio] = 
+    # social_links[:bio] = 
   end
 
 end
