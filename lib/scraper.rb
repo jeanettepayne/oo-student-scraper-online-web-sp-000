@@ -26,7 +26,8 @@ class Scraper
     # :blog => ,
     # :profile_quote => ,
     # :bio => 
-    }
+    # }
+   end
   end
 
 end
